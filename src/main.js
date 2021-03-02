@@ -6,7 +6,7 @@ import './plugins/element.js'
 import './assets/fonts/iconfont.css'
 
 import axios from 'axios'
-axios.defaults.baseURL = 'http://127.0.0.1:8888/api/'
+axios.defaults.baseURL = 'http://8.133.182.84:8888/api/'
 axios.interceptors.request.use(config => {
   config.headers.Authorization = window.sessionStorage.getItem('token')
   return config

@@ -39,18 +39,18 @@ export default {
   data () {
     return {
       loginForm: {
-        userLoginName: 'zsh',
-        userPassword: '111111'
+        userLoginName: '',
+        userPassword: ''
       },
       // 表单验证
       loginFormRules: {
         userLoginName: [
           { required: true, message: '请输入用户名', trigger: 'blur' },
-          { min: 2, max: 10, message: '长度在 2 到 10 个字符', trigger: 'blur' }
+          { min: 2, max: 20, message: '长度在 2 到 20 个字符', trigger: 'blur' }
         ],
         userPassword: [
           { required: true, message: '请输入用户密码', trigger: 'blur' },
-          { min: 6, max: 18, message: '长度在 6 到 18 个字符', trigger: 'blur' }
+          { min: 6, max: 20, message: '长度在 6 到 20 个字符', trigger: 'blur' }
         ]
       }
     }
